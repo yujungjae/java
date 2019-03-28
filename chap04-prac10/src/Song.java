@@ -14,13 +14,13 @@ public class Song {
 	}
 
 	public void show() {
-		System.out.print(year + "³â ");
-		System.out.print(country + "±¹ÀûÀÇ ");
-		System.out.print(artist + "°¡ ºÎ¸¥ ");
+		System.out.print(year + "년 ");
+		System.out.print(country + "국적의 ");
+		System.out.print(artist + "가 부른 ");
 		System.out.println(title);
 	}
 	public static void main(String[] args) {
-		Song myFavorite = new Song("Dancing Queen", "ABBA", 1978, "½º¿þµ§");
+		Song myFavorite = new Song("Dancing Queen", "ABBA", 1978, "");
 		myFavorite.show();
 	}
 
