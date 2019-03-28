@@ -20,7 +20,7 @@ public class Song {
 		System.out.println(title);
 	}
 	public static void main(String[] args) {
-		Song myFavorite = new Song("Dancing Queen", "ABBA", 1978, "");
+		Song myFavorite = new Song("Dancing Queen", "ABBA", 1978, "스웨덴");
 		myFavorite.show();
 	}
 
