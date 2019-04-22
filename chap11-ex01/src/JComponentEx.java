@@ -5,7 +5,7 @@ import javax.swing.*;
 
 public class JComponentEx extends JFrame {
 	public JComponentEx() {
-		super("JComponentÀÇ °øÅë ¸Ş¼Òµå ¿¹Á¦");
+		super("JComponentì˜ ê³µí†µ ë©”ì†Œë“œ ì˜ˆì œ");
 		Container c = getContentPane();
 		c.setLayout(new FlowLayout());
 		
@@ -13,20 +13,19 @@ public class JComponentEx extends JFrame {
 		JButton b2 = new JButton("    Disabled Button    ");
 		JButton b3 = new JButton("getX(), getY()");
 		
-		b1.setBackground(Color.YELLOW); // ¹è°æ»ö ¼³Á¤
-		b1.setForeground(Color.MAGENTA); // ±ÛÀÚ»ö ¼³Á¤
-		b1.setFont(new Font("Arial", Font.ITALIC, 20)); // Arial, 20ÇÈ¼¿ ÆùÆ® ¼³Á¤
-		b2.setEnabled(false); // ¹öÆ° ºñÈ°¼ºÈ­
+		b1.setBackground(Color.YELLOW);
+		b1.setForeground(Color.MAGENTA);
+		b1.setFont(new Font("Arial", Font.ITALIC, 20));
+		b2.setEnabled(false); 
 		b3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				JButton b = (JButton)e.getSource();
 				JComponentEx frame = (JComponentEx)b.getTopLevelAncestor();
-				frame.setTitle(b.getX() + "," + b.getY()); // Å¸ÀÌÆ²¿¡ ¹öÆ° ÁÂÇ¥ Ãâ·Â
+				frame.setTitle(b.getX() + "," + b.getY()); 
 			}
 		});
 		
-		c.add(b1); c.add(b2); c.add(b3); // ÄÁÅÙÆ®ÆÒ¿¡ ¹öÆ° ºÎÂø
-		
+		c.add(b1); c.add(b2); c.add(b3);
 		setSize(260,200); 
 		setVisible(true);
 	}
